@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Contact page</title>
+</head>
+<body>
+    <h1>Get in touch <strong>with us</strong></h1>
+    
+    <ul>
+        <li><h4><em>Email us at:</em> <strong>leonardocapraa@gmail.com</strong></h4></li>
+        <li><h4><em>Call us from 9 to 10 pm at: </em> <strong>+39 338 700 8281</strong></h4></li>
+        <li><h4><em>Let's meet in person at:</em> <strong>Via verguino 17 A </strong></h4></li>
+    </ul>
+
+    <!-- Creazione di un form ma per ora non possiamo raggiungere il massimo potenziale in quanto serve Javascript:-->
+    <!--Si una un tag <form> e all'interno <label> per scrivere e input type per definire un campo in cui l'utente può inserire qualcosa 
+        ci sono diversi tipi di input ad esempio password,testo,colore,file,immagine ecc.-->
+    <!--textarea si usa per raccogliere messagi grossi -->
+    <!-- negli attributi del form c'è action="qua dentro cosa succederà dopo che l'utente avrà pigiato su submit"-->
+    <!-- In questo caso mailto manda un email all'indirizzo specificato -->
+    <!-- NEgli attributi dell'input abbiamo: name="", questo quando schiacceremo il pulsante submit e ci porterà alla mail compilerà prima del testo inseritò il name che gli abbiamo assegnato-
+        tipo name="Il mio nome" e l'utente nel campo mette lello, quando schiaccia submit nella mail ci sarà : Il mio nome: Lello-->
+    <!-- Attributo enctype text/plain fa si che nella email cosa ha scritto l'utente venga visuallizato come puro testo e non testo con righe di html-->
+    
+    <hr style="3" noshade>
+    <form action="mailto:leonardocapraa@gmail.com" method="post" enctype="text/plain">
+        <label>Your Name:</label> 
+        <input type="text" name="My name"><br><br>
+        <label>Your Email:</label>
+        <input type="email" name="My email" id="">
+        <br><br>
+        <label>Your message:</label>
+        <br> <br>
+        <textarea name="My message" id="" cols="30" rows="10"></textarea>
+        <br><br>
+        <input type="submit">
+
+    </form>
+
+
+
+    
+</body>
+</html>
